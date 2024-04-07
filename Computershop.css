@@ -1,0 +1,779 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+section{
+  width: 100%;
+  height: 100vh;
+}
+section nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left:0 ;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+section nav .Logo img{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+section nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+section nav ul li a{
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+section nav .Icons i{
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.3s linear;
+}
+section nav .Icons i:hover{
+  color: cadetblue;
+}
+section nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: cadetblue;
+  display: block;
+  transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+  width: 100%;
+}
+section .Main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 130px
+}
+section .Main .Main_Text h1{
+  font-size: 60px;
+  position: relative;
+  top: -140px;
+  left: 20px ;
+}
+section .Main .Main_Text p{
+  width: 700px;
+  position: relative;
+  left: 30px;
+  font-weight: 500;
+  font-family: calibri;
+  top: -140px;
+  font-size: 23px;
+}
+section .Main .Main_Text h1 span{
+  color:cadetblue;
+  font-family: mv boli;
+}
+section .Main .Main_Image img{
+  width: 800px;
+}
+section .Main .Main_Button {
+  background-color: cadetblue;
+  width: 150px;
+  bottom: -90px;
+  left: -750px;
+  position: relative;
+  padding: 12px;
+}
+section .Main .Main_Button a{
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+section .Main .Main_Button i{
+  color: white;
+  transition: 0.3s;
+}
+section .Main .Main_Button:hover i{
+  transform: translateX(7px);
+}
+section .Main .Main_Text .Pricetag{
+  position: relative;
+  right: -200px;
+  bottom: 95px;
+}
+.About{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.About .About_Text h1{
+  font-size: 70px;
+}
+.About .About_Text h1 span{
+  font-family: mv boli;
+  color: cadetblue;
+}
+.About .About_Text {
+  position: relative;
+  top: 50px;
+  left: 80px;
+}
+.About .About_Text h3{
+  color: cadetblue;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.About .About_Text p{
+  font-family: calibri;
+  font-size: 23px;
+  width: 650px;
+}
+.About .About_Image img{
+  margin-top: 40px;
+}
+.About_Text .About_Button{
+  background-color: cadetblue;
+  margin-top: 30px;
+  width: 150px;
+  position: relative;
+  padding: 12px;
+}
+.About_Text .About_Button a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+.About_Text .About_Button i{
+  color: white;
+  transition: 0.3s;
+}
+.About_Text .About_Button:hover i{
+  transform: translateX(7px);
+}
+.Products{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:15px;
+}
+.Product_Info .Product_Image img{
+  transition: 0.3s;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+.Product_Info .Product_Image img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.Product_Info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 10px;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  text-align: center;
+  margin-top: 100px;
+}
+.Product_Info p{
+  font-family: calibri;
+  font-size:18px;
+  position: relative;
+  left: 80px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.Product_Info h3{
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.Product_Info .Stars{
+  display: flex;
+  justify-content: center;
+  color: cadetblue;
+}
+.Product_Info .Product_Button{
+  width: 150px;
+  position: relative;
+  left: 160px;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: cadetblue;
+}
+.Product_Info .Product_Button a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+.Product_Info .Product_Button i{
+  color: white;
+  transition: 0.3s ;
+}
+.Product_Info .Product_Button:hover i{
+  transform: translateX(7px);
+}
+.Product_Info .Main_like i{
+  position: relative;
+  top: 20px;
+  left: 120px;
+  display: none;
+}
+.Order{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 940px;
+}
+.Order .Order_Text{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Order .Order_Text{
+  margin-bottom: 60px;
+  margin-left: 190px;
+}
+.Order .Order_Text h1{
+  width: 500px;
+  font-size: 65px;
+}
+.Order .Order_Text h1 span{
+  font-family: mv boli;
+  color: cadetblue;
+}
+.Order .Order_Text input{
+  position: relative;
+  left: -10px;
+  margin-top: 20px;
+  width: 470px;
+  height: 40px;
+}
+.Order .Order_Text .Amount {
+  margin-right: 370px;
+  width: 100px;
+}
+.Order .Order_Image img{
+  width: 800px;
+}
+.Order .Order_Text .Order_Button{
+  position: relative;
+  margin-top: 20px;
+  margin-right: 335px;
+  width: 150px;
+  background-color: cadetblue;
+  padding: 12px;
+}
+.Order .Order_Text .Order_Button a{
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.Order .Order_Text .Order_Button i{
+  color: white;
+  transition: 0.3s;
+}
+.Order .Order_Text .Order_Button:hover i{
+  transform: translateX(7px);
+}
+.Impressum .Designer_Info p{
+  font-size: 20px;
+  text-align: center;
+  color: cadetblue;
+  font-family: Dialog;
+}
+.Payment img{
+  position: relative;
+  cursor: pointer;
+  top: -60px;
+  left: 82px;
+  width: 112px;
+  height: 70px;
+  transition: 0.3s;
+}
+.Payment img:hover{
+  transform: scale(1.04);
+}
+  .Order_Rate {
+  direction: rtl; 
+  position: relative;
+  left: -185px;
+  bottom: 50px;
+  }
+  
+  .Order_Rate i {
+    color: gray;
+    direction: ltr; 
+  }
+  .Order_Rate i:hover,
+  .Order_Rate i:hover ~ i {
+    color: cadetblue; 
+  }
+  .Reviews{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .Reviews .Review_Card{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    top: 120px;
+    left: 20px;
+    height: 800px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .Reviews .Review_Card:hover{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  }
+  .Reviews .Review_Card:hover img{
+    transform: scale(1.04);
+  }
+  .Reviews .Review_Image img{
+    transition: 0.3s ease;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+  }
+ .Reviews .Review_Text i{
+  margin-top: 10px;
+  color: cadetblue;
+ }
+.Reviews .Review_Text p{
+  font-family: calibri;
+  width: 400px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.Reviews .Review_Text .Like i{
+  margin: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Reviews .Review_Text .Like i:hover{
+  transform: scale(1.3);
+}
+@media screen and (min-width: 2500px) {
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  section{
+    width: 100%;
+    height: 100vh;
+  }
+  section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left:0 ;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  section nav .Logo img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+  section nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  section nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  section nav .Icons i{
+    margin-right: 10px;
+    font-size: 23px;
+    transition: 0.3s linear;
+  }
+  section nav .Icons i:hover{
+    color: cadetblue;
+  }
+  section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: cadetblue;
+    display: block;
+    transition: 0.2s linear;
+  }
+  section nav ul li a:hover::after{
+    width: 100%;
+  }
+  section .Main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px
+  }
+  section .Main .Main_Text h1{
+    font-size: 80px;
+    position: relative;
+    top: -80px;
+    left: 20px ;
+  }
+  section .Main .Main_Text p{
+    width: 900px;
+    position: relative;
+    left: 30px;
+    font-weight: 500;
+    font-family: calibri;
+    top: -60px;
+    font-size: 28px;
+  }
+  section .Main .Main_Text h1 span{
+    color:cadetblue;
+    font-family: mv boli;
+  }
+  section .Main .Main_Image img{
+    width: 1000px;
+  }
+  section .Main .Main_Button {
+    background-color: cadetblue;
+    width: 200px;
+    top: 220px;
+    left: -1020px;
+    position: relative;
+    padding: 15px;
+  }
+  section .Main .Main_Button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  section .Main .Main_Button i{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  section .Main .Main_Button:hover i{
+    transform: translateX(7px);
+  }
+  section .Main .Main_Text .Pricetag{
+    position: relative;
+    left: 250px;
+    bottom: 0px;
+    font-size: 23px;
+  }
+  .About{
+    position: relative;
+    top: -120px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .About .About_Text h1{
+    font-size: 100px;
+  }
+  .About .About_Text h1 span{
+    font-family: mv boli;
+    color: cadetblue;
+  }
+  .About .About_Text {
+    position: relative;
+    top: 45px;
+    left: 180px;
+  }
+  .About .About_Text h3{
+    color: cadetblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .About .About_Text p{
+    font-family: calibri;
+    font-size: 28px;
+    width: 800px;
+  }
+  .About .About_Image img{
+    width: 1000px;
+    margin-top: 0px;
+  }
+  .About_Text .About_Button{
+    background-color: cadetblue;
+    margin-top: 30px;
+    width: 200px;
+    position: relative;
+    padding: 15px;
+  }
+  .About_Text .About_Button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+  }
+  .About_Text .About_Button i{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  .About_Text .About_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Products{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+  }
+  .Product_Info .Product_Image img{
+    transition: 0.3s;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  
+  }
+  .Product_Info .Product_Image img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  }
+  .Product_Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    position: relative;
+    left: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .Product_Info p{
+    font-family: calibri;
+    position: relative;
+    font-size: 20px;
+    left: 145px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .Product_Info h3{
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .Product_Info .Stars{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    color: cadetblue;
+  }
+  .Product_Info .Product_Button{
+    width: 180px;
+    position: relative;
+    left: 220px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: cadetblue;
+  }
+  .Product_Info .Product_Button a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+  }
+  .Product_Info .Product_Button i{
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ;
+  }
+  .Product_Info .Product_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Product_Info .Main_like i{
+    position: relative;
+    top: 20px;
+    left: 120px;
+    display: none;
+  }
+  .Order{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 900px;
+  }
+  .Order .Order_Text{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Order .Order_Text{
+    margin-bottom: 0px;
+    margin-left: 350px;
+  }
+  .Order .Order_Text h1{
+    width: 700px;
+    font-size: 90px;
+  }
+  .Order .Order_Text h1 span{
+    font-family: mv boli;
+    color: cadetblue;
+  }
+  .Order .Order_Text input{
+    position: relative;
+    left: -40px;
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+  }
+  .Order .Order_Text .Amount {
+    margin-right: 370px;
+    width: 100px;
+  }
+  .Order .Order_Image img{
+    width: 1000px;
+  }
+  .Order .Order_Text .Order_Button{
+    position: relative;
+    margin-top: 20px;
+    margin-right: 485px;
+    width: 200px;
+    background-color: cadetblue;
+    padding: 15px;
+  }
+  .Order .Order_Text .Order_Button a{
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .Order .Order_Text .Order_Button i{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  .Order .Order_Text .Order_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Payment img{
+    position: relative;
+    cursor: pointer;
+    top: -60px;
+    left: 82px;
+    width: 120px;
+    height: 70px;
+    transition: 0.3s;
+  }
+  .Payment img:hover{
+    transform: scale(1.04);
+  }
+    .Order_Rate {
+    direction: rtl; 
+    position: relative;
+    left: -280px;
+    bottom: 50px;
+    }
+    
+    .Order_Rate i {
+      font-size: 18px;
+      color: gray;
+      direction: ltr; 
+    }
+    .Order_Rate i:hover,
+    .Order_Rate i:hover ~ i {
+      color: cadetblue; 
+    }
+    .Reviews{
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap:10px;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    .Reviews .Review_Card{
+      box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+      padding: 20px;
+      top: 120px;
+      left: 20px;
+      height: 1440px;
+      position: relative;
+      transition: 0.3s;
+    }
+    .Reviews .Review_Card:hover{
+      box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+    .Reviews .Review_Card:hover img{
+      transform: scale(1.04);
+    }
+    .Reviews .Review_Image img{
+      margin-top: 50px;
+      margin-left: 40px;
+      transition: 0.3s ease;
+      border-radius: 100%;
+      height: 500px;
+      width: 500px;
+    }
+   .Reviews .Review_Text i{
+    margin-top: 10px;
+    color: cadetblue;
+   }
+  .Reviews .Review_Text p{
+    font-family: calibri;
+    width: 500px;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .Reviews .Review_Text .Like i{
+    margin: 10px;
+    font-size: 23px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .Reviews .Review_Text .Like i:hover{
+    transform: scale(1.3);
+  }
+}
+
+
+
+

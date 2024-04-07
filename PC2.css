@@ -1,0 +1,185 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.Main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Main .Main_Image img{
+  position: relative;
+  height: auto ;  
+  width: 900px;
+}
+.Main .Main_Text{
+  margin-bottom: 80px;
+  width: 900px;
+}
+.Main .Main_Text h1{
+  margin-bottom: 50px;
+font-size: 70px;
+}
+.Main .Main_Text h1 span{
+  color: cadetblue;
+  font-family: mv boli;
+}
+.Main .Main_Text p{
+  width: 900px;
+  font-size: 20px;
+}
+.Main .Main_Button{
+  margin-top: 20px;
+  background-color: cadetblue;
+  width: 150px;
+  padding: 12px;
+}
+.Main .Main_Button a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+.Main .Main_Button i{
+  color:white;
+  transition: 0.3s;
+}
+.Main .Main_Button:hover i{
+  transform: translateX(7px);
+}
+.Main .Main_Text .Price_Tag p{
+margin-top: 15px;
+font-size: 20px;
+position: relative;
+font-weight: bold;
+}
+.Main .Main_Text .Stars i{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: cadetblue;
+}
+.Main .Main_Text ol{
+  position: relative;
+  top: -10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.Main .Main_Text ol li{
+  margin-top: 5px;
+  width: 240px;
+  margin-bottom: 10px;
+}
+.Main .Main_Text .Article_Number p {
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.Main .Main_Text .Article_Number p span{
+  font-weight: bold;
+}
+@media screen and (min-width: 2500px) {
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  body {
+    overflow: hidden;
+  }
+  .Main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Main .Main_Image img{
+    position: relative;
+    height: auto ;  
+    width: 1200px;
+  }
+  .Main .Main_Text{
+    margin-bottom: 80px;
+    width: 1200px;
+  }
+  .Main .Main_Text h1{
+    margin-bottom: 50px;
+  font-size: 90px;
+  }
+  .Main .Main_Text h1 span{
+    color: cadetblue;
+    font-family: mv boli;
+  }
+  .Main .Main_Text p{
+    width: 1000px;
+    font-size: 25px;
+    font-family: calibri;
+  }
+  .Main .Main_Button{
+    margin-top: 20px;
+    background-color: cadetblue;
+    width: 200px;
+    padding: 15px;
+  }
+  .Main .Main_Button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 7px;
+  }
+  .Main .Main_Button i{
+    font-size: 20px;
+    color:white;
+    transition: 0.3s;
+  }
+  .Main .Main_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Main .Main_Text .Price_Tag p{
+  margin-top: 15px;
+  font-size: 25px;
+  position: relative;
+  font-weight: bold;
+  }
+  .Main .Main_Text .Stars i{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: cadetblue;
+  }
+  .Main .Main_Text ol{
+    margin-top: 10px;
+    position: relative;
+    top: -10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+  .Main .Main_Text ol li{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 240px;
+    margin-bottom: 10px;
+  }
+  .Main .Main_Text .Article_Number p {
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .Main .Main_Text .Article_Number p span{
+    font-weight: bold;
+  }
+}
+
